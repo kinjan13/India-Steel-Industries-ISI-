@@ -80,11 +80,8 @@ function Home() {
                   <p className="subtitle">{slide.subtitle}</p>
                 </div>
               </div>
-            </div>
-          ))}
-        </div>
 
-        {/* Dots for navigation */}
+              {/* Dots for navigation */}
         <div className="dots">
           {slides.map((_, i) => (
             <span
@@ -94,6 +91,11 @@ function Home() {
             ></span>
           ))}
         </div>
+            </div>
+          ))}
+        </div>
+
+        
       </section>
 
       {/* FADE-IN STEEL INFO SECTION */}
@@ -122,7 +124,7 @@ function Home() {
 
           <div className="image-frame">
             <div className="image-content">
-              <img src="/assets/photo1.png" alt="Structural Steel" />
+              <img src="/assets/steel.jpg" alt="Structural Steel" />
             </div>
           </div>
         </div>

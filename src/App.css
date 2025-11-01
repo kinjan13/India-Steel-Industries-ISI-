@@ -1,15 +1,26 @@
-body {
-  margin: 0;
-  font-family: "Poppins", sans-serif;
-  background: #111;
-  color: white;
+/* Centers all site content with fixed width and padding */
+.site-wrapper {
+  max-width: 1280px;     /* standard website width */
+  margin: 0 auto;        /* centers horizontally */
+  background: #fff;      /* white background like IBEF */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
-.section {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2rem;
-  border-bottom: 1px solid #333;
+/* Add padding around sections */
+section {
+  padding: 40px 0;
+}
+
+/* Make sure the body background stays light grey around it */
+body {
+  background-color: #f4f4f4; /* similar to IBEF outer background */
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Make it responsive on small screens */
+@media (max-width: 768px) {
+  .site-wrapper {
+    width: 95%;
+  }
 }

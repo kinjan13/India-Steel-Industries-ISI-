@@ -1,13 +1,15 @@
 import React from "react";
 import Navbar from "./components/Navbar";
-import "./App.css";
 import Home from "./pages/Home";
+
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
+    <div className="site-wrapper">
       <Navbar />
       <Home />
+    
     </div>
   );
 }

@@ -1,19 +1,78 @@
+/* Navbar main container */
 .navbar {
   position: fixed;
   top: 0;
+  left: 0;
+  right: 0;              /* make sure it sticks to the right edge */
+  width: 100vw;          /* take the full viewport width */
+  height: 60px;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Inner content wrapper */
+.navbar-container {
   width: 100%;
-  background: transparent;
-  padding: 10px 30px;
+  max-width: 1200px;     /* optional: limits content width in large screens */
+  padding: 0 20px;       /* adds even spacing both sides */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 1000;
-  transition: background 0.3s ease;
+  box-sizing: border-box;
 }
 
-.navbar.scrolled {
-  background: #6d0000;
+/* Logo and text */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
+
+.logo img {
+  height: 35px;
+}
+
+
+.logo-text {
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  white-space: nowrap; /* ✅ ensures the text stays in one line */
+}
+
+/* Hamburger icon */
+.menu-icon {
+  display: none; /* visible only for small screens */
+}
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+}
+
+
+/* When scrolling down add a solid background */
+.navbar.scrolled {
+  background: #b30000;   /* dark on scroll */
+}
+
+/* Logo text white initially */
+.logo-text {
+  color: #fff;
+}
+
+/* Adjust hamburger icon visibility */
+.menu-icon svg {
+  color: #fff;
+}
+
 
 .logo {
   display: flex;
@@ -36,7 +95,7 @@
   cursor: pointer;
   display: flex;
   align-items: center;
-  margin-left: 800px;
+  margin-left: 880px;
 }
 
 /* Side Menu */
